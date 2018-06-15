@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title>Exo_03</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+  <body>
+    <div id="erreur">
+    <p>Vous n'avez pas rempli correctement les champs du formulaire !</p>
+    </div>
+
+    <form>
+        <label for="pseudo">Pseudonyme</label> 
+        <input type="text" id="pseudo" class="champ" />
+        <label for="mdp">Mot de passe</label> 
+        <input type="password" id="mdp" class="champ" />
+        <label for="confirmation">Confirmation</label> 
+        <input type="password" id="confirmation" class="champ" />
+        <label for="mail">E-mail</label>
+        <input type="text" id="mail" class="champ" />
+        <input type="submit" id="envoi" value="Envoyer" />
+        <input type="reset" id="rafraichir" value="Rafraîchir" />
+    </form>
+    <script>$('#erreur').css('display', 'none');
+      $(document).ready(function(){
+      
+      $('.champ').keyup(function(){
+           if($(this).val().length < 3){ // si la chaîne de caractères est inférieure à 3
+               $(this).css({ // on rend le champ rouge
+                   borderColor : 'red',
+             color : 'red'
+               });
+            }
+            else{
+                $(this).css({ // si tout est bon, on le rend vert
+              borderColor : 'green',
+              color : 'green'
+          });
+            }
+       });
+       $('#confirmation').keyup(function(){
+           if($(this).val() != $('#mdp').val()){ // si la confirmation est différente du mot de passe
+               $(this).css({ // on rend le champ rouge
+                 borderColor : 'red',
+                  color : 'red'
+               });
+               $('#mdp').css({ // on rend le champ rouge
+                 borderColor : 'red',
+                  color : 'red'
+               });
+           }
+           else{
+         $(this).css({ // si tout est bon, on le rend vert
+             borderColor : 'green',
+             color : 'green'
+         });
+         $('#mdp').css({ // on rend le champ rouge
+                 borderColor : 'green',
+                  color : 'green'
+               });
+           }});
+
+      $("#envoi").click(function(e){
+        e.preventDefault();
+        verif($('#pseudo'));
+        verif($('#mdp'));
+        verif($('#confirmation'));
+        verif($('#mail'));
+          
+      });
+      $("#rafraichir").click(function(){
+        $('.champ').css({ // on remet le style des champs comme on l'avait défini dans le style CSS
+               borderColor : '#ccc',
+             color : '#555'
+           });
+        $('#erreur').css('display', 'none');
+
+
+
+      });
+    });
+    function verif(nom){if(nom.val() == "")
+            {
+              $('#erreur').css('display', 'block');
+              nom.css({ // on rend le champ rouge
+                  borderColor : 'red',
+                  color : 'red'
+              });
+            }
+          }
+    </script>
+  </body>
+</html>

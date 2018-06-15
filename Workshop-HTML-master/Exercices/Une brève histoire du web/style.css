@@ -1,0 +1,10 @@
+.rond{-moz-border-radius:100%;
+    -webkit-border-radius:100%;
+    border-radius:100%;}
+.reduit{width: 100%;}
+body{width: 100%;
+padding-left: 30px;}
+button:hover {
+    background: #ff7b29;
+    border-radius: 50%;
+  }

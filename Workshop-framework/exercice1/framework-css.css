@@ -1,0 +1,173 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+span, div{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/*
+***border***
+dotted dashed solid double groove ridge inset outset
+
+ex:
+border: 1px solid #F36C76;
+
+.MonPrenom{
+	background-color: ;
+	border: ;
+	width : ;
+	height: ;
+}
+*/
+.Colombe{
+	background-color: white ;
+	border: 1px ridge rgb(49, 178, 54) ;
+	width : 100%;
+	height: 500px;
+}
+.Nicolas{
+	background-color:  black;
+	border: 10px;
+	width :300px;
+	height:400px;
+}
+.Marco{
+	background-color: blue ;
+	border:  2px solid grey;
+	width : 400px;
+	height: 400px;
+}
+.MarieLouise{
+	background-color: black ;
+	border: 25px solid red ;
+	width : 250px;
+	height: 350px;
+}
+.Marie{
+	background-color: lightgray;
+	border: 3px solid black;
+	width : 400px;
+	height: 300px;
+}
+.Thibault{
+	background-color: #4474a3;
+	border: 1px solid #fdfdfd;
+	width : 400px;
+	height: 200px;
+}
+.Adrien{
+	background-color: #0099ff;
+	border: 1px solid black;
+	width : 400px;
+	height: 200px;
+}
+.GuillaumeD{
+	background-color: #31E895;
+	border: 2px double blue;
+	width : 500px ;
+	height: 300px;
+}
+.Ajay{
+	background-color: #E0D1D1 ;	
+	border: rgba(0, 0, 0, 0);
+	width : 65%;
+	height: 250px;
+	clip-path: circle(40%);
+}
+.Alex{
+	background-color: grey;
+	border: solid black 15px;
+	width : 50%;
+	height: 200pX;
+}
+.Liam{
+	background-color: #BB2841;
+	border-top-right-radius: 5em ;
+	width :66% ;
+	height:210px ;
+}
+.Nathan{ 
+	background-color: orange;
+	border: solid black 5px;
+	border-radius: 5px;
+	width : 75%;
+	height: 100px;
+}
+.jordan{
+	background-color:#051a5e ;
+	border: solid black 6px; ;
+	width : 100% ;
+	height:300px;
+}
+.JF{
+	background-color:#236d99 ;
+	border:none; ;
+	width :100px ;
+	height:150px ;
+	border-radius: 4px;
+	opacity: 0.8;
+}
+
+.stephane{
+	background-color:#ffc730 ;
+	border: groove 3px #88289b;
+	width : 75%;
+	height: 947px;
+}
+.Massimo{
+	background-color: #543a78;
+	border: solid 1px #f9de36;
+	width : 260px;
+	height: 125px;
+}
+.Charlotte{
+	background-color: #42d1a6;
+	border: 4px ridge  #dde7d0 ;
+	width : 140px ;
+	height: 140px ;
+}
+.Cedric{
+	background-color: rgba(35, 216, 116, 0.8) ;
+	border: 12px double groove rgba(216, 35, 194, 0.8) ;
+	width : 120em ;
+	height: 120em ;
+}
+.Guillaume{
+	background-color: #eda812;
+	border: 3px double #6b4602;
+	width : 100em;
+	height: 100em;
+}
+.Hakan{
+	background-color: pink ;
+	border: 9px dotted #72e7f9 ;
+	width : 100%;
+	height: 1rem;
+} 
+.Eric{
+	background-color: #E834D2;
+	border: 12px dashed #563D8A;
+	width : 58%;
+	height: 22px;
+}
+.Jesse{
+	background-color: #205B6E ;
+	border: 3px solid #218579;
+	width : 78%;
+	height: 33px ;
+}
+.Geraldine{
+	background-color: #f28ad8;
+	border: 1px dotted #662856;
+	border-radius: 50%;
+	width : 75%;
+	height: 75px;
+}
+.Antoni{
+	background-color: #2688a0;
+	border: 3px groove #26a08c;
+	border-radius: 15%;
+	width : 50% ;
+	height: 55px ;
+}
